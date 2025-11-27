@@ -1,0 +1,17 @@
+# Core Java – Basics
+
+## What is Java?
+Java is a high-level, object-oriented programming language developed by Sun Microsystems.
+
+## Features
+- Platform Independent
+- Secure
+- Robust
+- Simple
+- Multi-threaded
+- Object-Oriented
+
+## JVM → JRE → JDK
+- **JVM**: Runs Java bytecode
+- **JRE**: JVM + Libraries
+- **JDK**: JRE + Development tools
