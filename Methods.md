@@ -1,85 +1,118 @@
-METHODS in Java
+# METHODS in Java
 
-A method in Java is a block of code that performs a specific task.
+A **method** in Java is a block of code that performs a specific task.
 
-Example:
+### Example
+```java
 void greet() {
     System.out.println("Hello!");
 }
+```
 
 A method usually has:
+- a return type  
+- a name  
+- parameters (optional)  
+- a body  
 
-a return type
-
-a name
-
-parameters (optional)
-
-a body
-
-General syntax:
+### General Syntax
+```java
 returnType methodName(parameters) {
     // code
 }
+```
 
-✔ Types of Methods in Java
-1️⃣ Instance Methods
+---
 
-You must create an object to use them.
+# ✔ Types of Methods in Java
 
+## 1️⃣ Instance Methods  
+You must create an object to call them.
+
+```java
 class Test {
-    void show() { }
+    void show() {
+        System.out.println("Instance Method");
+    }
 }
+
 Test obj = new Test();
 obj.show();
+```
 
-2️⃣ Static Methods
+---
 
-Called without object, using class name.
+## 2️⃣ Static Methods  
+Can be called without creating an object — using class name.
 
+```java
 class Test {
-    static void display() { }
+    static void display() {
+        System.out.println("Static Method");
+    }
 }
+
 Test.display();
+```
 
-3️⃣ Parameterized Methods
+---
 
+## 3️⃣ Parameterized Methods  
 Methods with input parameters.
 
+```java
 void sum(int a, int b) {
     System.out.println(a + b);
 }
+```
 
-4️⃣ Return Type Methods
+---
 
+## 4️⃣ Return Type Methods  
 Methods that return a value.
 
+```java
 int add(int a, int b) {
     return a + b;
 }
+```
 
-⭐ FUNCTION vs METHOD in Java
-Feature	Function	Method
-Belongs to	Independent (not tied to class)	Inside a class
-Used in	C, C++, Python, etc.	Java (because everything is inside class)
-Relation with object	Not related to objects	Related to classes/objects
-Example	int add() {} in C	void show() inside Java class
-🔥 Simple Explanation
+---
 
-👉 Function = general term
-👉 Method = function inside a class
+# ⭐ FUNCTION vs METHOD in Java
 
-Because Java is 100% object-oriented, every function is inside a class, so they are called methods.
+| Feature | Function | Method |
+|--------|----------|---------|
+| Belongs to | Independent (not inside a class) | Always inside a class |
+| Used in | C, C++, Python | Java |
+| Relation with object | Not related to objects | Related to classes/objects |
+| Example | `int add() {}` in C | `void show()` in Java class |
 
-⭐ Example to Understand Clearly
-C / C++ Function:
+---
+
+# 🔥 Simple Explanation
+
+👉 **Function = general term**  
+👉 **Method = function inside a class**
+
+Because Java is 100% object-oriented, every function exists **inside a class**, so they are called **methods**.
+
+---
+
+# ⭐ Example to Understand Clearly
+
+### C / C++ Function
+```cpp
 int add(int a, int b) {
     return a + b;
 }
+```
 
-Same in Java (Now it is a method because inside a class):
+### Same in Java (Now it is a method)
+```java
 class Demo {
     int add(int a, int b) {
         return a + b;
     }
 }
+```
